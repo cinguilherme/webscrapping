@@ -15,8 +15,9 @@ RUN  apt-get update \
     && wget --quiet https://raw.githubusercontent.com/vishnubob/wait-for-it/master/wait-for-it.sh -O /usr/sbin/wait-for-it.sh \
     && chmod +x /usr/sbin/wait-for-it.sh
 
-RUN pip install bs4 schedule 
 RUN pip install -U git+https://github.com/pyppeteer/pyppeteer@dev
 RUN pyppeteer-install
+
+RUN pip install bs4 schedule scrapy
 
 COPY . /app
