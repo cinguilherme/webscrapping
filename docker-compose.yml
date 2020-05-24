@@ -3,7 +3,8 @@ services:
   redditScrapy:
     image: webscraping_gcc:latest
     container_name: RedditScraper
-    command: scrapy runspider app/src/reddit/reddidspiders.py -o app/outputs/reddit/output.json
+    command: "scrapy runspider app/src/reddit/reddidspiders.py \
+      -o app/outputs/reddit/output.json"
     volumes:
       - ./:/app
 
