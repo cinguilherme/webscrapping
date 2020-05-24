@@ -1,6 +1,8 @@
+### attenction: read the robots.txt of any site before scrapping it!
+
 ## requirements
 
-#### there is 2 ways to work here, BeatyfulSoup and Puppetter
+#### there is 3 ways to work here, Scrapy, BeatyfulSoup and Puppetter
 
 ```
 docker, docker compose and Make
@@ -19,3 +21,5 @@ make build
 #### for instagram scrapping probably will require somethig abouve the scope of this project
 
 #### for facebook scrapping probably will require somethig abouve the scope of this project. Just read somewere on the web that this is possibly not legal.
+
+##### scrapy sample in the reddit folder
