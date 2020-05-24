@@ -23,3 +23,7 @@ make build
 #### for facebook scrapping probably will require somethig abouve the scope of this project. Just read somewere on the web that this is possibly not legal.
 
 ##### scrapy sample in the reddit folder
+
+```
+scrapy runspider XPTO.py -o output.json
+```
