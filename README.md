@@ -1,5 +1,7 @@
 ## requirements
 
+#### requirements.txt is only required for bettern behaving of your IDE since the dependencies will not be available out of your docker image.
+
 ```
 docker, docker compose and Make
 ```
