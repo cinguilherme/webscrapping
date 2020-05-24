@@ -24,6 +24,9 @@ make build
 
 ##### scrapy sample in the reddit folder
 
+###### the second line will generate a JSON file with all urls for images scraped
+
 ```
 scrapy runspider XPTO.py -o output.json
+scrapy runspider src/reddit/reddidspiders.py -o output.json
 ```

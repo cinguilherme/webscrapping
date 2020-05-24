@@ -1,5 +1,12 @@
 version: "3.7"
 services:
+  redditScrapy:
+    image: webscraping_gcc:latest
+    container_name: RedditScraper
+    command: scrapy runspider app/src/reddit/reddidspiders.py -o app/outputs/reddit/output.json
+    volumes:
+      - ./:/app
+
   playground:
     image: webscraping_gcc:latest
     command: python app/src/playground/playground.py

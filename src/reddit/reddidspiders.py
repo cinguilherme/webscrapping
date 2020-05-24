@@ -12,10 +12,6 @@ class RedditSpider(scrapy.Spider):
         for link in links:
             url = link.get()
             if any(extension in url for extension in extensions):
-                hmtl += """<a href="{url}" 
-                height="33%" 
-                width="33%"/>
-                </a>""".format(url=url)
-                with open("frontpage.html", "a") as page:
-                    page.write(hmtl)
-                    page.close()
+                yield {
+                    'url': {url}
+                }
