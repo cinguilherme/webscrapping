@@ -1,6 +1,6 @@
 ## requirements
 
-#### requirements.txt is only required for bettern behaving of your IDE since the dependencies will not be available out of your docker image.
+#### there is 2 ways to work here, BeatyfulSoup and Puppetter
 
 ```
 docker, docker compose and Make
@@ -11,6 +11,8 @@ docker, docker compose and Make
 ```
 make build
 ```
+
+#### requirements.txt is only required for bettern behaving of your IDE since the dependencies will not be available out of your docker image.
 
 ### this project is a simplified way to webscraping with spoecific targets
 
